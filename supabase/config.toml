@@ -1,0 +1,4 @@
+project_id = "turkvanta-store"
+
+[functions.commerce]
+verify_jwt = false
