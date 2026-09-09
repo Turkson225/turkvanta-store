@@ -5,4 +5,7 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Netlify detects Next.js and uses its supported runtime adapter.
+# Both Next.js and Vite are present; explicitly enable the Next.js runtime.
+# It creates the server function and routes required by the storefront.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
