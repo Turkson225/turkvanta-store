@@ -53,6 +53,17 @@ export default defineConfig(async () => {
 
   return {
     resolve: {alias: [{find:"@/lib/runtime",replacement:fileURLToPath(new URL("./lib/runtime.cloudflare.ts",import.meta.url))}]},
+    environments: {
+      client: {
+        build: {
+          rolldownOptions: {
+            // Vinext loads navigation by its named exports. Keep that namespace
+            // intact when the browser entry shares code with dynamic imports.
+            preserveEntrySignatures: "strict" as const,
+          },
+        },
+      },
+    },
     server: {
       ...(managedLinux ? { host: "0.0.0.0", allowedHosts: ["terminal.local"] } : {}),
       ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
