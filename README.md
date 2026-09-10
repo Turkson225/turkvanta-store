@@ -1,4 +1,4 @@
-# TURKVANTA — Everyday, elevated.
+# JEDI’S STORE — Everyday, elevated.
 
 A prelaunch Ghanaian ecommerce store built for Turk Innovation. Emerald green, white and charcoal branding; 24 illustrative products across Tech & Audio, Home & Living, Style & Carry, and Everyday Essentials.
 

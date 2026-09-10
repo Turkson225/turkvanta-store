@@ -1,6 +1,6 @@
 export type Category = { slug: string; name: string; short: string; image: string; description: string };
 export type Product = { id: string; slug: string; name: string; category: string; price: number; image: string; badge?: string; description: string; colors: string[]; stock: number; featured?: boolean; published: boolean; specs: Record<string,string> };
-export const brand = { name: 'TURKVANTA', tagline: 'Everyday, elevated.', phone: '055 459 8191', tel: '+233554598191', whatsapp: 'https://wa.me/233554598191', email: 'turkinnovation@gmail.com' };
+export const brand = { name: 'Jedi’s Store', tagline: 'Everyday, elevated.', phone: '055 459 8191', tel: '+233554598191', whatsapp: 'https://wa.me/233554598191', email: 'turkinnovation@gmail.com' };
 export const categories: Category[] = [
  {slug:'tech-audio', name:'Tech & Audio',short:'Plug into possibility.',image:'headphones',description:'Good sound. Clever connections. A better daily rhythm.'},
  {slug:'home-living',name:'Home & Living',short:'Make yourself at home.',image:'chair',description:'Thoughtful pieces for the spaces you call your own.'},
