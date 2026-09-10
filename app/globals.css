@@ -2,6 +2,8 @@
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @utility scrollbar-thin {
   scrollbar-width: thin;
 }
@@ -51,6 +53,45 @@
   --sidebar-accent-foreground: #171717;
   --sidebar-border: #e5e5e5;
   --sidebar-ring: #a1a1a1;
+}
+
+/* Shared dark palette also reaches menus, dialogs, and other portaled controls. */
+:root.dark {
+  color-scheme: dark;
+  --background: #101815;
+  --foreground: #edf5ef;
+  --card: #17231e;
+  --card-foreground: #edf5ef;
+  --popover: #1c2a23;
+  --popover-foreground: #edf5ef;
+  --primary: #75e6a7;
+  --primary-foreground: #092619;
+  --secondary: #203229;
+  --secondary-foreground: #dcebe1;
+  --muted: #203229;
+  --muted-foreground: #a6bbae;
+  --accent: #263f31;
+  --accent-foreground: #e1f7e9;
+  --destructive: #ff9e9b;
+  --border: #344a3d;
+  --input: #496251;
+  --ring: #75e6a7;
+  --chart-1: #75e6a7;
+  --chart-2: #77cddd;
+  --chart-3: #c4b0f5;
+  --chart-4: #ebce83;
+  --chart-5: #edac87;
+  --sidebar: #17231e;
+  --sidebar-foreground: #edf5ef;
+  --sidebar-primary: #75e6a7;
+  --sidebar-primary-foreground: #092619;
+  --sidebar-accent: #263f31;
+  --sidebar-accent-foreground: #e1f7e9;
+  --sidebar-border: #344a3d;
+  --sidebar-ring: #75e6a7;
+  --green: #75e6a7;
+  --ink: #edf5ef;
+  --soft: #203229;
 }
 
 @theme inline {
