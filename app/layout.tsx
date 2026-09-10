@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import './globals.css';
+import './customer.css';
 import {StoreProvider} from '@/components/store/provider';
 import {StoreShell} from '@/components/store/shell';
 import {getStoreData,config} from '@/lib/store/server';
