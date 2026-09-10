@@ -193,3 +193,23 @@
 
 .order-payment-line{margin:12px 0;color:#52675b;font-size:.875rem;line-height:1.6}
 .order-payment-line strong{color:#234b34}
+
+/* Owner verification remains at the management address instead of redirecting. */
+.owner-access{max-width:700px;padding-top:48px;padding-bottom:70px}
+.owner-access-panel{display:flex;flex-direction:column;align-items:flex-start;gap:22px;padding:36px}
+.owner-access-panel h1{font-size:2.4rem;line-height:1.2}
+.owner-access-panel h2{font-size:1.45rem;line-height:1.35}
+.owner-access-panel .eyebrow{color:var(--green)}
+.owner-access-panel>p,.owner-verification>p{color:var(--muted-foreground);font-size:1rem}
+.owner-access-panel .notice{width:100%}
+.owner-access-panel .form-grid,.owner-access-panel>.stack,.owner-verification{width:100%}
+.owner-access-panel .form-grid{margin-top:3px}
+.owner-access-panel input,.owner-verification input{font-size:1rem;min-height:48px;width:100%}
+.owner-access-icon{display:grid;place-items:center;width:66px;height:66px;border-radius:18px;background:var(--accent);color:var(--green)}
+.owner-access-loading{display:flex;align-items:center;gap:12px}
+.owner-session-email strong{overflow-wrap:anywhere}
+.owner-verification{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.owner-verification .security-code{overflow-wrap:anywhere;margin:12px 0}
+.account-owner-entry{margin-top:20px}
+@media(max-width:600px){.owner-access{padding-top:24px;padding-bottom:40px}.owner-access-panel{padding:24px;gap:20px}.owner-access-panel h1{font-size:2rem}.owner-access-panel .button{width:100%}.owner-verification .form-grid{grid-template-columns:1fr}.owner-verification .span-2{grid-column:1}}
+@media print{.owner-access,.account-owner-entry{display:none!important}}
